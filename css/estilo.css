@@ -1,0 +1,358 @@
+/* Estilos Gerais e configuração de variáveis*/
+* {
+    color: #25282B;
+    --cor-branca: #FFF;
+}
+
+/* adiciona uma transição para ícones e links */
+a, i {
+    transition: .5s;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 700;
+    color: #555;
+}
+
+/* classe para cor secundária */
+.secondary-color {
+    color: #555;
+}
+
+/* classe para centralizar e configurar corretamente as imagens */
+.center-image {
+    background-size: cover;
+    background-position: center;
+}
+
+/* classe criada para personalizar os botões do Bootstrap */
+.btn {
+    text-decoration: none;
+    background-color: #25282B;
+    color: var(--cor-branca);
+    padding: 7px 18px;
+    border-radius: 0;
+}
+
+/* efeito ao passar o mouse em cima de um botão com a classe btn */
+.btn:hover {
+    background-color: #333;
+    color: var(--cor-branca);
+}
+
+
+
+/* -- HEADER -- */
+/* personalização do navbar ofereceido pelo Bootstrap */
+#header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #CCC;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    height: 50px;
+    margin: 20px 0;
+}
+
+
+
+/* -- NAVBAR -- */
+#navbar {
+    padding: 3px;
+    margin: 10px auto;
+}
+
+#navbar a {
+    width: auto;
+    color: #444;
+}
+#navbar a:hover {
+    color: #C1B696;
+}
+
+
+
+/* MAIN BANNER */
+.main-image {
+    height: 400px;
+    background-image: url('../img/g_1.png');
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.main-image-info {
+    background-color: var(--cor-branca);
+    padding: 25px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
+
+/* Adapata o texto da imagem principal para celulares */
+@media screen and (max-width: 540px) {
+    .main-image-info {
+        max-width: 300px;
+    }
+}
+
+
+
+/* -- POSTS -- */
+/* essas imagens são da página inicial, e cada classe representa a imagem de um post*/
+/* elas foram colocadas por CSS pois assim é possível personalizar a centralização delas*/
+#img2 {
+    background-image: url('../img/g_2.jpg');
+}
+#img3 {
+    background-image: url('../img/g_3.jpg');
+}
+
+#gallery-container h2 {
+    text-align: center;
+}
+
+#gallery-container h2,
+#gallery-container .col-md-6,
+#gallery-container .col-12 {
+    margin-bottom: 50px;
+}
+
+.small-image-container {
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+
+
+/* -- RODAPÉ -- */
+footer {
+    border-top: 1px solid #CCC;
+    height: 250px;
+    padding: 30px;
+}
+
+footer i {
+    font-size: 20px;
+}
+
+#social-icons-container {
+    padding: 25px;
+}
+
+#social-icons-container div {
+    text-align: center;
+}
+
+#social-icons-container .col-1 {
+    --bs-gutter-x: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer p {
+    text-align: center;
+    margin: 20px;
+}
+
+a:hover i {
+    color: #C1B696;
+}
+
+
+
+/* -- POSTS -- */
+.post-container {
+    margin-bottom: 50px;
+}
+
+.main-image-post {
+    height: 200px;
+    background-image: url('../img/g_1.png');
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.img2-post {
+    height: 200px;
+    background-image: url('../img/g_2.jpg');
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.img3-post {
+    height: 200px;
+    background-image: url('../img/g_3.jpg');
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.post-legend {
+    margin-bottom: 30px;
+}
+
+.post-link {
+    margin-top: 30px;
+    text-align: right;
+    font-weight: 50;
+}
+
+
+
+/* -- SOBRE MIM -- */
+.profile-banner {
+    height: 200px;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4D16AQFKbpl7weX4PA/profile-displaybackgroundimage-shrink_350_1400/0/1617217192094?e=1639008000&v=beta&t=xfOZIozHN54y8NQ8wWCbeZmr1sSW9eF1NYTXlQV7X-M');
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.profile-image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.overlay {
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4D03AQHHUjnhf4XpeA/profile-displayphoto-shrink_800_800/0/1609642438993?e=1639008000&v=beta&t=L3S68RVbdSyGu1gmc1gYAdQt0VYnAVzpS_Qloys0r_k');
+    margin-top: 120px;
+    z-index: 9;
+}
+
+.profile-name {
+    margin-top: 70px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.profile-description {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#profile-social-container {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+#profile-social-container .col-1 {
+    --bs-gutter-x: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#profile-social-container .bi {
+    color: rgb(165, 165, 165);
+}
+
+.profile-text-container {
+    text-align: justify;
+    max-width: 60%;
+    margin-bottom: 50px;
+}
+
+.profile-list {
+    list-style: none;
+}
+
+/* Define um novo estilo para essa lista não-ordenada */
+.profile-list li:before {
+    content: "✅";
+    margin: 0 10px 0 0;
+}
+
+.profile-footer {
+    padding: 15px;
+    height: 100px;
+}
+
+/* Adapata o texto e as imagens da seção "Sobre" para celulares */
+@media screen and (max-width: 540px) {
+    .profile-banner {
+        height: 100px;
+        max-width: 90%;
+    }
+
+    .profile-image {
+        height: 90px;
+        width: 90px;
+    }
+
+    .overlay {
+        margin-top: 55px;
+    }
+
+    .profile-name {
+        margin-top: 45px;
+    }
+
+    .profile-text-container {
+        max-width: 90%;
+    }
+
+    .profile-list {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .profile-footer {
+        height: 145px;
+    }
+}
+
+
+
+/* -- CONTATO (FORMULÁRIO) -- */
+.contact-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    max-width: 60%;
+    margin-bottom: 50px;
+}
+
+.contact-buttons {
+    margin-top: 30px;
+}
+
+.btn-limpar, .btn-enviar {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.btn-limpar {
+    margin: 0 10px;
+}
+
+.btn-enviar {
+    background-color: rgb(105, 172, 105);
+    margin: 0 10px;
+}
+
+.btn-enviar:hover {
+    background-color: rgb(153, 226, 153);
+}
+
+/* Adapta o formulário para celulares */
+@media screen and (max-width: 540px) {
+
+    .contact-container {
+        max-width: 90%;
+    }
+
+    .btn-enviar {
+        margin-top: 15px;
+    }
+
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto | UniToledo</title>
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <!-- Só o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="container-fluid">
+        <header class="row" id="header">
+            <div id="logo-container">
+                <a href="index.html">
+                    <img src="img/unitoledo-logo.png" alt="Logo Unitoledo" id="logo">
+                </a>
+            </div>
+        </header>
+
+        <!-- NAVBAR -->
+        <!-- Foi utilizada a navbar do Bootstrap, alterando algumas propriedades e classes pelo CSS -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container justify-content-end" id="navbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Conteúdos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="post1.html">Os Desafios da Internet das Coisas</a></li>
+                                <li><a class="dropdown-item" href="post2.html">O Futuro das Cidades Inteligentes</a></li>
+                                <li><a class="dropdown-item active" aria-current="page" href="#">A Evolução e História da IoT</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quemsomos.html">Sobre Mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- MAIN -->
+    <div class="container post-container">
+        <div class="img3-post center-image"></div>
+        <div class="row">
+            <div class="col">
+                <h2 class="post-title">A Evolução e História da IoT</h2>
+                <p class="post-legend secondary-color"><strong>Postado por <a href="quemsomos.html">Gabriel</a></strong> | 17 ago. 2021</p>
+                <p>Evoluindo de forma cada vez mais rápida e contínua, a Internet das Coisas atingirá a incrível marca de 83 bilhões de dispositivos inteligentes conectados até 2024. Segundo a mesma pesquisa, promovida pelo Juniper Research, em 2020 essa marca estava em 35 bilhões de conexões, o que significa que em apenas 4 anos teremos um aumento de 150% de aparelhos inteligentes conectados à internet <em>(JUNIPER, 2020)</em>.</p>
+                <p>Tudo isso surgiu no ano de 1991, quando a conexão TCP/IP se tornou acessível e começou a se expandir. Com isso, discussões sobre conectar objetos à rede surgiram e, pouco tempo depois, varejistas do Reino Unido passaram a utilizar chips em cartões fidelidade que funcionavam através de frequências de rádio. Essa ideia, que ficou conhecida como RFID (<em>Radio Frequency Identification</em>), foi apresentada ao pioneiro de tecnologia britânico <Strong>Kevin Ashton</Strong>.</p>
+                <p>Na época, Ashton trabalhava como funcionário de uma empresa de cosméticos e, precisando organizar melhor a logística de mercadorias da loja, teve a ideia de inserir os microchips aos produtos vendidos, coletando dados sobre abastecimento e vendas. Assim, em 1999, propôs todo um sistema de sensores conectados que deu origem ao conceito de <em>Internet of Things</em> (Internet das Coisas), como ele mesmo o chamou.</p>
+                <p>No começo dos anos 2000, muitos especialistas da época encararam a ideia proposta por Ashton como algo impossível quando ele a apresentava. <q>As pessoas pensavam que todos aqueles dados travariam a Internet; que as leis da física significavam que o tipo de comunicação de rádio de que precisávamos era impossível; que os chips de silício nunca custariam menos de um dólar; que a internet era uma moda passageira (…)</q> <em>(ASHTON, 2018)</em>.</p>
+                <p>Obviamente, essas afirmações provaram-se erradas, já que hoje somos mais de 5 bilhões de pessoas com acesso à internet e serviços online que não param de evoluir <em>(INTERNET WORLD STATS, 2021)</em>. Conceitos como casa conectada, cidades inteligentes e carros autônomos já fazem parte do nosso dia-a-dia e tem evoluído cada vez mais. Na indústria, vivemos a 4º Revolução Industrial, que tem como base a implementação dos dispositivos de IoT. Na agricultura, fazendas inteligentes e fazendas verticais têm evoluído proporcionalmente à demanda de alimentos cada vez maior, visando também a sustentabilidade.</p>
+                <p>Além de fatores como esse, é importante citar também a chegada da tecnologia 5G no Brasil, que pouco a pouco têm ganhado espaço e regulamentações para impulsionar cada vez mais o mercado de Internet das Coisas em território nacional. Como exemplo, a <u>Lei nº 14.108/2020</u>, também conhecida como <strong>Lei da Internet das Coisas</strong>, está em vigor desde o dia 1 de janeiro de 2021, visando reduzir “a zero a alíquota de determinadas taxas e contribuições para as comunicações realizadas de máquina a máquina.“ <em>(CARDOSO, 2021)</em>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="secondary-color">Minhas Redes Sociais:</p>
+        <div class="row justify-content-center" id="social-icons-container">
+            <div class="col-1">
+                <a href="https://www.linkedin.com/in/gabrielframeschi/" target="_blank"><i class="bi bi-linkedin secondary-color"></i></a>
+            </div>
+            <div class="col-1">
+                <a href="https://github.com/framesgabriel" target="_blank"><i class="bi bi-github secondary-color"></i></a>
+            </div>
+            <div class="col-1">
+                <a href="https://twitter.com/framesgabriel" target="_blank"><i class="bi bi-twitter secondary-color"></i></a>
+            </div>
+        </div>
+        <p class="secondary-color">Desenvolvido por <a href="quemsomos.html">Gabriel Frameschi</a> na disciplina de <a href="https://matriculas.unitoledo.br/curso/analise-e-desenvolvimento-de-sistemas-4340" target="_blank">Desenvolvimento Web</a> – 03/10/2021</p>
+    </footer>
+</body>
+</html>

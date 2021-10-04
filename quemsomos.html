@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto | UniToledo</title>
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <!-- Só o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="container-fluid">
+        <header class="row" id="header">
+            <div id="logo-container">
+                <a href="index.html">
+                    <img src="img/unitoledo-logo.png" alt="Logo Unitoledo" id="logo">
+                </a>
+            </div>
+        </header>
+
+        <!-- NAVBAR -->
+        <!-- Foi utilizada a navbar do Bootstrap, alterando algumas propriedades e classes pelo CSS -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container justify-content-end" id="navbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Conteúdos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="post1.html">Os Desafios da Internet das Coisas</a></li>
+                                <li><a class="dropdown-item" href="post2.html">O Futuro das Cidades Inteligentes</a></li>
+                                <li><a class="dropdown-item" href="post3.html">A Evolução e História da IoT</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre Mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- MAIN -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="profile-banner center-image"></div>
+            <div class="profile-image center-image"></div>
+            <div class="profile-image overlay center-image"></div>
+        </div>
+        <h2 class="profile-name">Gabriel Frameschi</h2>
+        <p class="profile-description secondary-color">Estudante de Análise e Desevolvimento de Sistemas</p>
+        <div class="row justify-content-center" id="profile-social-container">
+            <div class="col-1">
+                <a href="https://www.linkedin.com/in/gabrielframeschi/" target="_blank"><i class="bi bi-linkedin secondary-color"></i></a>
+            </div>
+            <div class="col-1">
+                <a href="https://github.com/framesgabriel" target="_blank"><i class="bi bi-github secondary-color"></i></a>
+            </div>
+            <div class="col-1">
+                <a href="https://twitter.com/framesgabriel" target="_blank"><i class="bi bi-twitter secondary-color"></i></a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="profile-text-container">
+                <p>Bem-vindo(a)! Meu nome é <strong>Gabriel Frameschi</strong> e sou estudante de Análise e Desenvolvimento de Sistemas na UniToledo Araçatuba. Essa página é um projeto feito para a matéria de Desenvolvimento Web, aplicada pelo Prof. M.e Fabrício Quintanilha.</p>
+                <p>O objetivo desse projeto foi aplicar tudo (e mais um pouco) que foi visto durante as aulas, praticando os códigos e fixando a teoria. Graças ao Bootstrap 5, foi possível montar todo o design do site de forma mais rápida (mesmo sendo difícil compreender ele no começo &#x1f923;).</p>
+                <p>Também foram aplicados vários conceitos por aqui, como o básico de design de interfaces e layouts, com o propósito de oferecer a melhor experiência possível nos mais diferentes tipos de telas. Segue uma pequena lista com as tecnologias e recursos usados:</p>
+                <ul class="profile-list">
+                    <li>HTML5 e CSS3 (o feijão com arroz)</li>
+                    <li>JavaScript: Alguns scripts de funcionalidades do Bootstrap</li>
+                    <li>Bootstrap 5: biblioteca de estilos e funções (base de toda a página)</li>
+                    <li>Alguns conceitos de UI e UX (Design de Interfaces)</li>
+                </ul>
+                <p>Espero que tenham gostado. ;)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container profile-footer">
+        <p class="secondary-color">Desenvolvido por <a href="#">Gabriel Frameschi</a> na disciplina de <a href="https://matriculas.unitoledo.br/curso/analise-e-desenvolvimento-de-sistemas-4340" target="_blank">Desenvolvimento Web</a> – 03/10/2021</p>
+    </footer>
+</body>
+</html>
