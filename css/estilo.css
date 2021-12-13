@@ -356,3 +356,15 @@ a:hover i {
     }
 
 }
+
+/* Formatação do counter do Formulário. */
+#ajuda-mensagem {
+    display: flex;
+    justify-content: space-between;
+}
+
+#counter {
+    text-align: right;
+    background-color: transparent;
+    border: transparent;
+}

@@ -12,7 +12,9 @@
     <!-- Ícones do Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- CSS do projeto -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        <?php include "css/estilo.css" ?>
+    </style>
     <!-- JavaScript do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous" defer></script>
 </head>
@@ -65,24 +67,24 @@
     <div class="container contact-container">
         <h2 class="contact-title">Manda um Alô!</h2>
         <hr>
-        <form action="/processar" class="row g-3 needs-validation" novalidate>
+        <form method="post" action="php/cadastroBasico.php" class="row g-3 needs-validation" novalidate>
             <div class="col-md-6">
                 <label for="nome" class="form-label">Nome*:</label>
-                <input type="text" class="form-control" id="nome" required>
+                <input name="nome" type="text" class="form-control" id="nome" required>
                 <!-- Mensagens para validação -->
                 <div class="valid-feedback">Sucesso! ;)</div>
                 <div class="invalid-feedback">Insira seu nome!</div>
             </div>
             <div class="col-md-6">
                 <label for="email" class="form-label">E-mail*:</label>
-                <input type="email" class="form-control" id="email" required>
+                <input name="email" type="email" class="form-control" id="email" required>
                 <!-- Mensagens para validação -->
                 <div class="valid-feedback">Sucesso! ;)</div>
                 <div class="invalid-feedback">Insira um e-mail válido!</div>
             </div>
             <div class="col-md-4">
                 <label for="telefone" class="form-label">Telefone:</label>
-                <input type="text" id="telefone" name="telefone" class="form-control" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$">
+                <input name="telefone" type="text" id="telefone" name="telefone" class="form-control" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$">
                 <div id="ajuda-telefone" class="form-text">(99)99999-9999</div>
                 <!-- Mensagens para validação -->
                 <div class="valid-feedback">Sucesso! ;)</div>
@@ -115,8 +117,8 @@
                 <div class="invalid-feedback">Selecione seu estado.</div>
             </div>
             <div class="col-md-3">
-                <label for="idade" class="form-label">Idade:</label>
-                <input type="date" id="idade" name="idade" class="form-control" max="2020-10-06" min="1900-10-06">
+                <label for="idade" class="form-label">Nascimento:</label>
+                <input name="idade" type="date" id="idade" class="form-control" max="2020-10-06" min="1900-10-06">
                 <!-- Mensagens para validação -->
                 <div class="valid-feedback">Sucesso! ;)</div>
                 <div class="invalid-feedback">Selecione a data de seu aniversário.</div>
@@ -136,9 +138,9 @@
             <div class="col-md-3">
                 <label for="validacao-sexo" class="form-check justify-content-start">Sexo*:</label>
                 <div class="form-check">
-                    <input type="radio" class="form-check-input" id="validacao-sexo-f" name="sexo" required> Feminino
+                    <input name="sexo" type="radio" class="form-check-input" id="validacao-sexo-f" value="Feminino" required> Feminino
                     <br>
-                    <input type="radio" class="form-check-input" id="validacao-sexo-m" name="sexo" required> Masculino
+                    <input name="sexo" type="radio" class="form-check-input" id="validacao-sexo-m" value="Masculino" required> Masculino
                     <!-- Mensagens para validação -->
                     <div class="valid-feedback">Sucesso! ;)</div>
                     <div class="invalid-feedback">Selecione o seu sexo.</div>
@@ -146,8 +148,11 @@
             </div>
             <div class="col-md-12">
                 <label for="mensagem" class="form-label">Mensagem*:</label>
-                <textarea class="form-control" id="mensagem" rows="3" minlength=10 required></textarea>
-                <div id="ajuda-mensagem" class="form-text">Insira uma mensagem com mais de 10 caracteres.</div>
+                <textarea name="mensagem" onkeyup="textCounter(this, 'counter', 360);" class="form-control" id="mensagem" rows="5" minlength=10 maxLength=360 required></textarea>
+                <div id="ajuda-mensagem" class="form-text">
+                    Insira uma mensagem entre 10 a 300 caracteres.
+                    <input disabled maxLength="3" size="3" value="360" id="counter"></input>
+                </div>
                 <!-- Mensagens para validação -->
                 <div class="valid-feedback">Sucesso! ;)</div>
                 <div class="invalid-feedback">Por favor, insira sua mensagem.</div>
@@ -198,6 +203,18 @@
             }, false)
             })
         })()
+
+        // Função para exibir quantos caracteres restam dentro da textarea do formulário.
+        function textCounter(field, field2, maxlimit)
+        {
+            var countfield = document.getElementById(field2);
+            if (field.value.length > maxlimit) {
+                field.value = field.value.substring(0, maxlimit);
+                return false;
+            } else {
+                countfield.value = maxlimit - field.value.length;
+            }
+        }
     </script>
     
 </body>
